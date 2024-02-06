@@ -96,8 +96,8 @@ modules:
           type: pypi
           name: requests
       - type: file
-        url: https://files.pythonhosted.org/packages/d4/91/c89518dd4fe1f3a4e3f6ab7ff23cb00ef2e8c9adf99dacc618ad5e068e28/certifi-2023.11.17.tar.gz
-        sha256: 9b469f3a900bf28dc19b8cfbf8019bf47f7fdd1a65a1d4ffb98fc14166beb4d1
+        url: https://files.pythonhosted.org/packages/71/da/e94e26401b62acd6d91df2b52954aceb7f561743aa5ccc32152886c76c96/certifi-2024.2.2.tar.gz
+        sha256: 0569859f95fc761b18b45ef421b1290a0f65f147e92a1e5eb3e635f9a5e4e66f
         x-checker-data:
           type: pypi
           name: certifi
@@ -209,8 +209,12 @@ modules:
           url-template: https://gitlab.torproject.org/tpo/applications/torbrowser-launcher/-/archive/v$version/torbrowser-launcher-v$version.tar.gz
       - type: patch
         path: use-flatpak-sys-prefix.patch
+      - type: patch
+        path: add-developer-to-appdata.patch
     build-commands:
       - python3 setup.py install --prefix=${FLATPAK_DEST} --root=/ --optimize=1
     post-install:
-      - desktop-file-edit --set-key="Icon" --set-value="org.torproject.torbrowser-launcher" /app/share/applications/torbrowser-settings.desktop
-      - mv /app/share/applications/torbrowser-settings.desktop /app/share/applications/org.torproject.torbrowser-launcher.settings.desktop
+      - desktop-file-edit --set-key="Icon" --set-value="org.torproject.torbrowser-launcher"
+        /app/share/applications/torbrowser-settings.desktop
+      - mv /app/share/applications/torbrowser-settings.desktop
+        /app/share/applications/org.torproject.torbrowser-launcher.settings.desktop
