@@ -72,8 +72,8 @@ modules:
           type: pypi
           name: setuptools
       - type: file
-        url: https://files.pythonhosted.org/packages/b8/d6/ac9cd92ea2ad502ff7c1ab683806a9deb34711a1e2bd8a59814e8fc27e69/wheel-0.43.0.tar.gz
-        sha256: 465ef92c69fa5c5da2d1cf8ac40559a8c940886afcef87dcf14b9470862f1d85
+        url: https://files.pythonhosted.org/packages/b7/a0/95e9e962c5fd9da11c1e28aa4c0d8210ab277b1ada951d2aee336b505813/wheel-0.44.0.tar.gz
+        sha256: a29c3f2817e95ab89aa4660681ad547c0e9547f20e75b0562fe7723c9a2a9d49
         x-checker-data:
           type: pypi
           name: wheel
