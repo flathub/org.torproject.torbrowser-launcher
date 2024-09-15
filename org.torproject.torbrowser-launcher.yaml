@@ -66,8 +66,8 @@ modules:
         requests
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/3e/2c/f0a538a2f91ce633a78daaeb34cbfb93a54bd2132a6de1f6cec028eee6ef/setuptools-74.1.2.tar.gz
-        sha256: 95b40ed940a1c67eb70fc099094bd6e99c6ee7c23aa2306f4d2697ba7916f9c6
+        url: https://files.pythonhosted.org/packages/a7/17/133e1cd1e24373e1898ca3c7330f5c385b46c7091f0451e678f37245591b/setuptools-75.0.0.tar.gz
+        sha256: 25af69c809d9334cd8e653d385277abeb5a102dca255954005a7092d282575ea
         x-checker-data:
           type: pypi
           name: setuptools
@@ -84,8 +84,8 @@ modules:
           type: pypi
           name: flit_core
       - type: file
-        url: https://files.pythonhosted.org/packages/00/6f/93e724eafe34e860d15d37a4f72a1511dd37c43a76a8671b22a15029d545/idna-3.9.tar.gz
-        sha256: e5c5dafde284f26e9e0f28f6ea2d6400abd5ca099864a67f576f3981c6476124
+        url: https://files.pythonhosted.org/packages/f1/70/7703c29685631f5a7590aa73f1f1d3fa9a380e654b86af429e0934a32f7d/idna-3.10.tar.gz
+        sha256: 12f65c9b470abda6dc35cf8e63cc574b1c52b11df2c86030af0ac09b01b13ea9
         x-checker-data:
           type: pypi
           name: idna
