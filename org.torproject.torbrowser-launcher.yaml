@@ -55,9 +55,9 @@ modules:
           project-id: 1239
           url-template: https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-$version.tar.bz2
     post-install:
-      - mv /app/lib/python3.11/site-packages/gpg-1.23.2-*.egg/gpg /app/lib/python3.11/site-packages/
-      - mv /app/lib/python3.11/site-packages/gpg-1.23.2-*.egg/EGG-INFO /app/lib/python3.11/site-packages/gpg-1.23.2-py3.10.egg-info
-      - rm -r /app/lib/python3.11/site-packages/gpg-1.23.2-*.egg
+      - mv /app/lib/python3.13/site-packages/gpg-1.23.2-*.egg/gpg /app/lib/python3.13/site-packages/
+      - mv /app/lib/python3.13/site-packages/gpg-1.23.2-*.egg/EGG-INFO /app/lib/python3.13/site-packages/gpg-1.23.2-py3.10.egg-info
+      - rm -r /app/lib/python3.13/site-packages/gpg-1.23.2-*.egg
 
   - name: python3-requests
     buildsystem: simple
