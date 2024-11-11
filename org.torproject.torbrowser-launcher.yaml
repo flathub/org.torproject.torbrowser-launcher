@@ -1,9 +1,9 @@
 app-id: org.torproject.torbrowser-launcher
 runtime: org.kde.Platform
-runtime-version: 5.15-23.08
+runtime-version: 5.15-24.08
 sdk: org.kde.Sdk
 base: com.riverbankcomputing.PyQt.BaseApp
-base-version: 5.15-23.08
+base-version: 5.15-24.08
 cleanup-commands:
   - /app/cleanup-BaseApp.sh
 build-options:
@@ -55,9 +55,9 @@ modules:
           project-id: 1239
           url-template: https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-$version.tar.bz2
     post-install:
-      - mv /app/lib/python3.11/site-packages/gpg-1.24.0-*.egg/gpg /app/lib/python3.11/site-packages/
-      - mv /app/lib/python3.11/site-packages/gpg-1.24.0-*.egg/EGG-INFO /app/lib/python3.11/site-packages/gpg-1.24.0-py3.10.egg-info
-      - rm -r /app/lib/python3.11/site-packages/gpg-1.24.0-*.egg
+      - mv /app/lib/python3.12/site-packages/gpg-1.24.0-*.egg/gpg /app/lib/python3.12/site-packages/
+      - mv /app/lib/python3.12/site-packages/gpg-1.24.0-*.egg/EGG-INFO /app/lib/python3.12/site-packages/gpg-1.24.0-py3.10.egg-info
+      - rm -r /app/lib/python3.12/site-packages/gpg-1.24.0-*.egg
 
   - name: python3-requests
     buildsystem: simple
