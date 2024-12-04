@@ -48,16 +48,16 @@ modules:
       - --enable-languages=python
     sources:
       - type: archive
-        url: https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.24.0.tar.bz2
-        sha256: 61e3a6ad89323fecfaff176bc1728fb8c3312f2faa83424d9d5077ba20f5f7da
+        url: https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.24.1.tar.bz2
+        sha256: ea05d0258e71061d61716584ec34cef59330a91340571edc46b78374973ba85f
         x-checker-data:
           type: anitya
           project-id: 1239
           url-template: https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-$version.tar.bz2
     post-install:
-      - mv /app/lib/python3.12/site-packages/gpg-1.24.0-*.egg/gpg /app/lib/python3.12/site-packages/
-      - mv /app/lib/python3.12/site-packages/gpg-1.24.0-*.egg/EGG-INFO /app/lib/python3.12/site-packages/gpg-1.24.0-py3.10.egg-info
-      - rm -r /app/lib/python3.12/site-packages/gpg-1.24.0-*.egg
+      - mv /app/lib/python3.12/site-packages/gpg-1.24.1-*.egg/gpg /app/lib/python3.12/site-packages/
+      - mv /app/lib/python3.12/site-packages/gpg-1.24.1-*.egg/EGG-INFO /app/lib/python3.12/site-packages/gpg-1.24.1-py3.10.egg-info
+      - rm -r /app/lib/python3.12/site-packages/gpg-1.24.1-*.egg
 
   - name: python3-requests
     buildsystem: simple
@@ -145,8 +145,8 @@ modules:
         packaging
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/d9/5a/e7c31adbe875f2abbb91bd84cf2dc52d792b5a01506781dbcf25c91daf11/six-1.16.0-py2.py3-none-any.whl
-        sha256: 8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254
+        url: https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl
+        sha256: 4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274
         x-checker-data:
           type: pypi
           name: six
