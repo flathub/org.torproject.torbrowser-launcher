@@ -22,6 +22,8 @@ finish-args:
   - --socket=pulseaudio
   - --env=GTK_USE_PORTAL=1
   - --env=MOZ_ENABLE_WAYLAND=1
+  - --talk-name=org.a11y.Bus
+  - --env=GNOME_ACCESSIBILITY=1
 modules:
   - shared-modules/dbus-glib/dbus-glib.json
 
