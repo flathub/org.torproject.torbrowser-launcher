@@ -68,8 +68,8 @@ modules:
         requests
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/32/d2/7b171caf085ba0d40d8391f54e1c75a1cda9255f542becf84575cfd8a732/setuptools-76.0.0.tar.gz
-        sha256: 43b4ee60e10b0d0ee98ad11918e114c70701bc6051662a9a675a0496c1a158f4
+        url: https://files.pythonhosted.org/packages/a9/5a/0db4da3bc908df06e5efae42b44e75c81dd52716e10192ff36d0c1c8e379/setuptools-78.1.0.tar.gz
+        sha256: 18fd474d4a82a5f83dac888df697af65afa82dec7323d09c3e37d1f14288da54
         x-checker-data:
           type: pypi
           name: setuptools
@@ -80,8 +80,8 @@ modules:
           type: pypi
           name: wheel
       - type: file
-        url: https://files.pythonhosted.org/packages/bc/18/b9b81cab2b8f63e6e7f72e1ba2766a0454fcd563e7a77b8299cb917ba805/flit_core-3.11.0.tar.gz
-        sha256: 6ceeee3219e9d2ea282041f3e027c441597b450b33007cb81168e887b6113a8f
+        url: https://files.pythonhosted.org/packages/69/59/b6fc2188dfc7ea4f936cd12b49d707f66a1cb7a1d2c16172963534db741b/flit_core-3.12.0.tar.gz
+        sha256: 18f63100d6f94385c6ed57a72073443e1a71a4acb4339491615d0f16d6ff01b2
         x-checker-data:
           type: pypi
           name: flit_core
@@ -161,8 +161,8 @@ modules:
           name: packaging
           packagetype: bdist_wheel
       - type: file
-        url: https://files.pythonhosted.org/packages/1c/a7/c8a2d361bf89c0d9577c934ebb7421b25dc84bf3a8e3ac0a40aed9acc547/pyparsing-3.2.1-py3-none-any.whl
-        sha256: 506ff4f4386c4cec0590ec19e6302d3aedb992fdc02c761e90416f158dacf8e1
+        url: https://files.pythonhosted.org/packages/05/e7/df2285f3d08fee213f2d041540fa4fc9ca6c2d44cf36d3a035bf2a8d2bcc/pyparsing-3.2.3-py3-none-any.whl
+        sha256: a749938e02d6fd0b59b356ca504a24982314bb090c383e3cf201c95ef7e2bfcf
         x-checker-data:
           type: pypi
           name: pyparsing
@@ -192,8 +192,8 @@ modules:
       - -Ddocbook_docs=disabled
     sources:
       - type: archive
-        url: https://download.gnome.org/sources/libnotify/0.8/libnotify-0.8.4.tar.xz
-        sha256: 8fa04d4ebdc155b0a239df88bd9f09e8f2739d5707a1390b427ab4985f83d25a
+        url: https://download.gnome.org/sources/libnotify/0.8/libnotify-0.8.6.tar.xz
+        sha256: c5540aaefb60e1d63b1c587c05f2284ebe72ece7d0c0e5e4a778cfd5844b6b58
         x-checker-data:
           type: anitya
           project-id: 13149
