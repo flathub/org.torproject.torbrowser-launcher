@@ -22,8 +22,6 @@ finish-args:
   - --socket=pulseaudio
   - --env=GTK_USE_PORTAL=1
   - --env=MOZ_ENABLE_WAYLAND=1
-  - --talk-name=org.a11y.Bus
-  - --env=GNOME_ACCESSIBILITY=1
 modules:
   - shared-modules/dbus-glib/dbus-glib.json
 
@@ -70,6 +68,9 @@ modules:
       - type: file
         url: https://files.pythonhosted.org/packages/32/d2/7b171caf085ba0d40d8391f54e1c75a1cda9255f542becf84575cfd8a732/setuptools-76.0.0.tar.gz
         sha256: 43b4ee60e10b0d0ee98ad11918e114c70701bc6051662a9a675a0496c1a158f4
+        x-checker-data:
+          type: pypi
+          name: setuptools
       - type: file
         url: https://files.pythonhosted.org/packages/8a/98/2d9906746cdc6a6ef809ae6338005b3f21bb568bea3165cfc6a243fdc25c/wheel-0.45.1.tar.gz
         sha256: 661e1abd9198507b1409a20c02106d9670b2576e916d58f520316666abca6729
