@@ -50,16 +50,16 @@ modules:
       - --enable-languages=python
     sources:
       - type: archive
-        url: https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.24.2.tar.bz2
-        sha256: e11b1a0e361777e9e55f48a03d89096e2abf08c63d84b7017cfe1dce06639581
+        url: https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.24.3.tar.bz2
+        sha256: bfc17f5bd1b178c8649fdd918956d277080f33df006a2dc40acdecdce68c50dd
         x-checker-data:
           type: anitya
           project-id: 1239
           url-template: https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-$version.tar.bz2
     post-install:
-      - mv /app/lib/python3.12/site-packages/gpg-1.24.2-*.egg/gpg /app/lib/python3.12/site-packages/
-      - mv /app/lib/python3.12/site-packages/gpg-1.24.2-*.egg/EGG-INFO /app/lib/python3.12/site-packages/gpg-1.24.2-py3.10.egg-info
-      - rm -r /app/lib/python3.12/site-packages/gpg-1.24.2-*.egg
+      - mv /app/lib/python3.12/site-packages/gpg-1.24.3-*.egg/gpg /app/lib/python3.12/site-packages/
+      - mv /app/lib/python3.12/site-packages/gpg-1.24.3-*.egg/EGG-INFO /app/lib/python3.12/site-packages/gpg-1.24.3-py3.10.egg-info
+      - rm -r /app/lib/python3.12/site-packages/gpg-1.24.3-*.egg
 
   - name: python3-requests
     buildsystem: simple
@@ -68,8 +68,8 @@ modules:
         requests
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/95/32/0cc40fe41fd2adb80a2f388987f4f8db3c866c69e33e0b4c8b093fdf700e/setuptools-80.4.0.tar.gz
-        sha256: 5a78f61820bc088c8e4add52932ae6b8cf423da2aff268c23f813cfbb13b4006
+        url: https://files.pythonhosted.org/packages/8d/d2/ec1acaaff45caed5c2dedb33b67055ba9d4e96b091094df90762e60135fe/setuptools-80.8.0.tar.gz
+        sha256: 49f7af965996f26d43c8ae34539c8d99c5042fbff34302ea151eaa9c207cd257
         x-checker-data:
           type: pypi
           name: setuptools
