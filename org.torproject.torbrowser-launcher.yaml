@@ -50,8 +50,8 @@ modules:
       - --enable-languages=python
     sources:
       - type: archive
-        url: https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.24.3.tar.bz2
-        sha256: bfc17f5bd1b178c8649fdd918956d277080f33df006a2dc40acdecdce68c50dd
+        url: https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-2.0.0.tar.bz2
+        sha256: ddf161d3c41ff6a3fcbaf4be6c6e305ca4ef1cc3f1ecdfce0c8c2a167c0cc36d
         x-checker-data:
           type: anitya
           project-id: 1239
