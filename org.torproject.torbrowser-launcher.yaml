@@ -92,14 +92,14 @@ modules:
           type: pypi
           name: idna
       - type: file
-        url: https://files.pythonhosted.org/packages/63/70/2bf7780ad2d390a8d301ad0b550f1581eadbd9a20f896afe06353c2a2913/requests-2.32.3.tar.gz
-        sha256: 55365417734eb18255590a9ff9eb97e9e1da868d4ccd6402399eaf68af20a760
+        url: https://files.pythonhosted.org/packages/e1/0a/929373653770d8a0d7ea76c37de6e41f11eb07559b103b1c02cafb3f7cf8/requests-2.32.4.tar.gz
+        sha256: 27d0316682c8a29834d3264820024b62a36942083d52caf2f14c0591336d3422
         x-checker-data:
           type: pypi
           name: requests
       - type: file
-        url: https://files.pythonhosted.org/packages/e8/9e/c05b3920a3b7d20d3d3310465f50348e5b3694f4f88c6daf736eef3024c4/certifi-2025.4.26.tar.gz
-        sha256: 0a816057ea3cdefcef70270d2c515e4506bbc954f417fa5ade2021213bb8f0c6
+        url: https://files.pythonhosted.org/packages/73/f7/f14b46d4bcd21092d7d3ccef689615220d8a08fb25e564b65d20738e672e/certifi-2025.6.15.tar.gz
+        sha256: d747aa5a8b9bbbb1bb8c22bb13e22bd1f18e9796defa16bab421f7f7a317323b
         x-checker-data:
           type: pypi
           name: certifi
