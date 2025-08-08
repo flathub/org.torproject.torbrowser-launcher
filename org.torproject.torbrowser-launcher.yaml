@@ -24,8 +24,6 @@ finish-args:
   - --talk-name=org.a11y.Bus
   - --env=GNOME_ACCESSIBILITY=1
 modules:
-  - shared-modules/dbus-glib/dbus-glib.json
-
   - name: PyQtApp
 
   - name: SWIG
