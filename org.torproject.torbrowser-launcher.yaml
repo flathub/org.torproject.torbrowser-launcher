@@ -21,7 +21,6 @@ finish-args:
   - --device=dri
   - --socket=pulseaudio
   - --env=GTK_USE_PORTAL=1
-  - --env=MOZ_ENABLE_WAYLAND=1
   - --talk-name=org.a11y.Bus
   - --env=GNOME_ACCESSIBILITY=1
 modules:
@@ -181,23 +180,6 @@ modules:
           type: pypi
           name: distro
           packagetype: bdist_wheel
-
-  - name: libnotify
-    buildsystem: meson
-    config-opts:
-      - -Dtests=false
-      - -Dintrospection=disabled
-      - -Dman=false
-      - -Dgtk_doc=false
-      - -Ddocbook_docs=disabled
-    sources:
-      - type: archive
-        url: https://download.gnome.org/sources/libnotify/0.8/libnotify-0.8.6.tar.xz
-        sha256: c5540aaefb60e1d63b1c587c05f2284ebe72ece7d0c0e5e4a778cfd5844b6b58
-        x-checker-data:
-          type: anitya
-          project-id: 13149
-          url-template: https://download.gnome.org/sources/libnotify/$major.$minor/libnotify-$version.tar.xz
 
   - name: torbrowser-launcher
     buildsystem: simple
