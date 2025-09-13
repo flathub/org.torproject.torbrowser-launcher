@@ -55,7 +55,7 @@ modules:
       #    url-template: https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-$version.tar.bz2
     post-install:
       - mv /app/lib/python3.12/site-packages/gpg-1.24.3-*.egg/gpg /app/lib/python3.12/site-packages/
-      - mv /app/lib/python3.12/site-packages/gpg-1.24.3-*.egg/EGG-INFO /app/lib/python3.12/site-packages/gpg-1.24.3-py3.10.egg-info
+      - mv /app/lib/python3.12/site-packages/gpg-1.24.3-*.egg/EGG-INFO /app/lib/python3.12/site-packages/gpg-1.24.3-py3.12.egg-info
       - rm -r /app/lib/python3.12/site-packages/gpg-1.24.3-*.egg
 
   - name: python3-requests
