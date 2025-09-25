@@ -9,6 +9,7 @@ cleanup-commands:
 build-options:
   env:
     - BASEAPP_REMOVE_WEBENGINE=1
+    - BASEAPP_DISABLE_NUMPY=1
 separate-locales: false
 command: torbrowser-launcher
 finish-args:
