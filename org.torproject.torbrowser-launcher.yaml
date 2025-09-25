@@ -191,8 +191,3 @@ modules:
         path: use-flatpak-sys-prefix.patch
     build-commands:
       - python3 setup.py install --prefix=${FLATPAK_DEST} --root=/ --optimize=1
-    post-install:
-      - desktop-file-edit --set-key="Icon" --set-value="org.torproject.torbrowser-launcher"
-        /app/share/applications/torbrowser-settings.desktop
-      - mv /app/share/applications/torbrowser-settings.desktop /app/share/applications/org.torproject.torbrowser-launcher.settings.desktop
-      - sed -i '1 s/.*/#!\/usr\/bin\/env python3/' /app/bin/torbrowser-launcher
