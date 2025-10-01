@@ -1,18 +1,17 @@
 app-id: org.torproject.torbrowser-launcher
 runtime: org.kde.Platform
-runtime-version: 5.15-24.08
+runtime-version: '6.9'
 sdk: org.kde.Sdk
-base: com.riverbankcomputing.PyQt.BaseApp
-base-version: 5.15-24.08
+base: io.qt.PySide.BaseApp
+base-version: '6.9'
 cleanup-commands:
   - /app/cleanup-BaseApp.sh
 build-options:
   env:
     - BASEAPP_REMOVE_WEBENGINE=1
+    - BASEAPP_DISABLE_NUMPY=1
 separate-locales: false
 command: torbrowser-launcher
-rename-desktop-file: torbrowser.desktop
-rename-icon: torbrowser
 finish-args:
   - --share=ipc
   - --share=network
@@ -181,20 +180,13 @@ modules:
     buildsystem: simple
     sources:
       - type: archive
-        url: https://gitlab.torproject.org/tpo/applications/torbrowser-launcher/-/archive/v0.3.7/torbrowser-launcher-v0.3.7.tar.gz
-        sha256: bd348fd5d923f078c75870a9139678a467b2ab5ba21117fd42ccf0cfa3e4be21
+        url: https://gitlab.torproject.org/tpo/applications/torbrowser-launcher/-/archive/v0.3.9/torbrowser-launcher-v0.3.9.tar.gz
+        sha256: 267483c88760dacf4af2d480d2d0b094f3ffd10f8fd0f3e5f52c61df91e9ccdb
         x-checker-data:
           type: anitya
           project-id: 6359
           url-template: https://gitlab.torproject.org/tpo/applications/torbrowser-launcher/-/archive/v$version/torbrowser-launcher-v$version.tar.gz
       - type: patch
         path: use-flatpak-sys-prefix.patch
-      - type: patch
-        path: add-developer-to-appdata.patch
     build-commands:
       - python3 setup.py install --prefix=${FLATPAK_DEST} --root=/ --optimize=1
-    post-install:
-      - desktop-file-edit --set-key="Icon" --set-value="org.torproject.torbrowser-launcher"
-        /app/share/applications/torbrowser-settings.desktop
-      - mv /app/share/applications/torbrowser-settings.desktop /app/share/applications/org.torproject.torbrowser-launcher.settings.desktop
-      - sed -i '1 s/.*/#!\/usr\/bin\/env python3/' /app/bin/torbrowser-launcher
