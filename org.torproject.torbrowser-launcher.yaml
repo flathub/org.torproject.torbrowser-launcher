@@ -181,8 +181,8 @@ modules:
     buildsystem: simple
     sources:
       - type: archive
-        url: https://gitlab.torproject.org/tpo/applications/torbrowser-launcher/-/archive/v0.3.7/torbrowser-launcher-v0.3.7.tar.gz
-        sha256: bd348fd5d923f078c75870a9139678a467b2ab5ba21117fd42ccf0cfa3e4be21
+        url: https://gitlab.torproject.org/tpo/applications/torbrowser-launcher/-/archive/v0.3.9/torbrowser-launcher-v0.3.9.tar.gz
+        sha256: 267483c88760dacf4af2d480d2d0b094f3ffd10f8fd0f3e5f52c61df91e9ccdb
         x-checker-data:
           type: anitya
           project-id: 6359
