@@ -45,14 +45,10 @@ modules:
       - type: archive
         url: https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.24.3.tar.bz2
         sha256: bfc17f5bd1b178c8649fdd918956d277080f33df006a2dc40acdecdce68c50dd
-      #  x-checker-data:
-      #    type: anitya
-      #    project-id: 1239
-      #    url-template: https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-$version.tar.bz2
-    #post-install:
-    #  - mv /app/lib/python3.12/site-packages/gpg-1.24.3-*.egg/gpg /app/lib/python3.12/site-packages/
-    #  - mv /app/lib/python3.12/site-packages/gpg-1.24.3-*.egg/EGG-INFO /app/lib/python3.12/site-packages/gpg-1.24.3-py3.12.egg-info
-    #  - rm -r /app/lib/python3.12/site-packages/gpg-1.24.3-*.egg
+        #x-checker-data:
+        #  type: anitya
+        #  project-id: 1239
+        #  url-template: https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-$version.tar.bz2
 
   - name: python3-requests
     buildsystem: simple
