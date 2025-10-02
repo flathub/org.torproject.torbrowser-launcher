@@ -1,0 +1,21 @@
+From c4760ed920de7b26d5467769275dac53548234d0 Mon Sep 17 00:00:00 2001
+From: asciiwolf <mail@asciiwolf.com>
+Date: Wed, 1 Oct 2025 19:46:08 +0000
+Subject: [PATCH] metainfo: Add bug tracker url
+
+---
+ share/metainfo/org.torproject.torbrowser-launcher.metainfo.xml | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/share/metainfo/org.torproject.torbrowser-launcher.metainfo.xml b/share/metainfo/org.torproject.torbrowser-launcher.metainfo.xml
+index 62caa3a..e599e83 100644
+--- a/share/metainfo/org.torproject.torbrowser-launcher.metainfo.xml
++++ b/share/metainfo/org.torproject.torbrowser-launcher.metainfo.xml
+@@ -51,6 +51,7 @@
+    <caption xml:lang="cs">Okno pro změnu nastavení Spouštěče Prohlížeče Tor</caption>
+   </screenshot>
+  </screenshots>
++ <url type="bugtracker">https://gitlab.torproject.org/tpo/applications/torbrowser-launcher/-/issues</url>
+  <url type="homepage">https://gitlab.torproject.org/tpo/applications/torbrowser-launcher</url>
+  <update_contact>boklm@torproject.org</update_contact>
+  <content_rating type="oars-1.1"/>
