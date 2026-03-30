@@ -81,8 +81,8 @@ modules:
           type: pypi
           name: idna
       - type: file
-        url: https://files.pythonhosted.org/packages/34/64/8860370b167a9721e8956ae116825caff829224fbca0ca6e7bf8ddef8430/requests-2.33.0.tar.gz
-        sha256: c7ebc5e8b0f21837386ad0e1c8fe8b829fa5f544d8df3b2253bff14ef29d7652
+        url: https://files.pythonhosted.org/packages/5f/a4/98b9c7c6428a668bf7e42ebb7c79d576a1c3c1e3ae2d47e674b468388871/requests-2.33.1.tar.gz
+        sha256: 18817f8c57c6263968bc123d237e3b8b08ac046f5456bd1e307ee8f4250d3517
         x-checker-data:
           type: pypi
           name: requests
@@ -111,8 +111,8 @@ modules:
             <: '3'
             '>=': '2'
       - type: file
-        url: https://files.pythonhosted.org/packages/3e/af/8d6ad988a6a4b9830c4e39e4c2e390e3037465b76a5e32e92273df27a973/chardet-7.3.0.tar.gz
-        sha256: e6bf602bb8a070524a19bac1cff2a10d62c71b09606f066251282870fa1466e5
+        url: https://files.pythonhosted.org/packages/03/4b/1fe1ade6b4d33abff0224b45a8310775b04308668ad1bdef725af8e3fcaa/chardet-7.4.0.post2.tar.gz
+        sha256: 21a6b5ca695252c03385dcfcc8b55c27907f1fe80838aa171b1ff4e356a1bb67
         x-checker-data:
           type: pypi
           name: chardet
