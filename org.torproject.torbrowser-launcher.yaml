@@ -111,8 +111,8 @@ modules:
             <: '3'
             '>=': '2'
       - type: file
-        url: https://files.pythonhosted.org/packages/05/1d/0d102acd04cebb03377a3aa79f0c501db68bd0afbc1306e40cb208911319/chardet-7.4.2.tar.gz
-        sha256: f2a41ccf8bf8eb1768d741e80d09b902e8d0d8c94974597e07a5d7e6a122a0dc
+        url: https://files.pythonhosted.org/packages/19/b6/9df434a8eeba2e6628c465a1dfa31034228ef79b26f76f46278f4ef7e49d/chardet-7.4.3.tar.gz
+        sha256: cc1d4eb92a4ec1c2df3b490836ffa46922e599d34ce0bb75cf41fd2bf6303d56
         x-checker-data:
           type: pypi
           name: chardet
