@@ -75,8 +75,8 @@ modules:
           type: pypi
           name: flit_core
       - type: file
-        url: https://files.pythonhosted.org/packages/ce/cc/762dfb036166873f0059f3b7de4565e1b5bc3d6f28a414c13da27e442f99/idna-3.13.tar.gz
-        sha256: 585ea8fe5d69b9181ec1afba340451fba6ba764af97026f92a91d4eef164a242
+        url: https://files.pythonhosted.org/packages/05/b1/efac073e0c297ecf2fb33c346989a529d4e19164f1759102dee5953ee17e/idna-3.14.tar.gz
+        sha256: 466d810d7a2cc1022bea9b037c39728d51ae7dad40d480fc9b7d7ecf98ba8ee3
         x-checker-data:
           type: pypi
           name: idna
