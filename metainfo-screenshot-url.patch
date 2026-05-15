@@ -1,0 +1,13 @@
+diff --git a/share/metainfo/org.torproject.torbrowser-launcher.metainfo.xml b/share/metainfo/org.torproject.torbrowser-launcher.metainfo.xml
+index 6d881bd..28d25c2 100644
+--- a/share/metainfo/org.torproject.torbrowser-launcher.metainfo.xml
++++ b/share/metainfo/org.torproject.torbrowser-launcher.metainfo.xml
+@@ -46,7 +46,7 @@
+  </description>
+  <screenshots>
+   <screenshot type="default">
+-   <image>https://gitlab.torproject.org/tpo/applications/torbrowser-launcher/-/raw/main/screenshot.png</image>
++   <image>https://raw.githubusercontent.com/torproject/torbrowser-launcher/main/screenshot.png</image>
+    <caption>Window to change Tor Browser Launcher settings</caption>
+    <caption xml:lang="ar">نافذة لتغيير إعدادات مشغّل متصفّح تور</caption>
+    <caption xml:lang="cs">Okno pro změnu nastavení Spouštěče Prohlížeče Tor</caption>
