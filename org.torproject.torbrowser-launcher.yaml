@@ -19,8 +19,8 @@ finish-args:
   - --socket=fallback-x11
   - --device=dri
   - --socket=pulseaudio
-  - --env=GNOME_ACCESSIBILITY=1
   - --env=GTK_USE_PORTAL=1
+  - --talk-name=org.a11y.Bus
 modules:
   - name: SWIG
     config-opts:
