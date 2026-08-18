@@ -22,34 +22,6 @@ finish-args:
   - --env=GTK_USE_PORTAL=1
   - --talk-name=org.a11y.Bus
 modules:
-  - name: SWIG
-    config-opts:
-      - --without-boost
-      - --without-alllang
-    cleanup:
-      - /bin
-      - /share/swig
-    sources:
-      - type: archive
-        url: https://sourceforge.net/projects/swig/files/swig/swig-4.4.1/swig-4.4.1.tar.gz
-        sha256: 40162a706c56f7592d08fd52ef5511cb7ac191f3593cf07306a0a554c6281fcf
-        x-checker-data:
-          type: anitya
-          project-id: 4919
-          url-template: https://sourceforge.net/projects/swig/files/swig/swig-$version/swig-$version.tar.gz
-
-  - name: gpgme
-    config-opts:
-      - --enable-languages=python
-    sources:
-      - type: archive
-        url: https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.24.3.tar.bz2
-        sha256: bfc17f5bd1b178c8649fdd918956d277080f33df006a2dc40acdecdce68c50dd
-        #x-checker-data:
-        #  type: anitya
-        #  project-id: 1239
-        #  url-template: https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-$version.tar.bz2
-
   - name: python3-requests
     buildsystem: simple
     build-commands:
@@ -156,6 +128,116 @@ modules:
           type: pypi
           name: pyparsing
           packagetype: bdist_wheel
+
+  - name: python3-gpg
+    buildsystem: simple
+    build-commands:
+      - pip3 install --no-index --find-links="file://${PWD}" --prefix=${FLATPAK_DEST}
+        gpg
+    sources:
+      - type: file
+        url: https://files.pythonhosted.org/packages/63/34/ba1c580383c9eada3711951fef0795c80b829a078d72188184bcab9dd527/packaging-26.3-py3-none-any.whl
+        sha256: d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c
+        x-checker-data:
+          type: pypi
+          name: packaging
+          packagetype: bdist_wheel
+      - type: file
+        url: https://files.pythonhosted.org/packages/46/ef/34533186e76c526d9ec17a1ad9a10c7354cbfb20f51583cc36dfe4bdccd0/flit_core-4.0.2.tar.gz
+        sha256: b6929defd93884b584d7c87829e0e7b5c26ed6be17b0b873979019314aa841c8
+        x-checker-data:
+          type: pypi
+          name: flit_core
+      - type: file
+        url: https://files.pythonhosted.org/packages/5a/82/42f767fc1c1143d6fd36efb827202a2d997a375e160a71eb2888a925aac1/pathspec-1.1.1.tar.gz
+        sha256: 17db5ecd524104a120e173814c90367a96a98d07c45b2e10c2f3919fff91bf5a
+        x-checker-data:
+          type: pypi
+          name: pathspec
+      - type: file
+        url: https://files.pythonhosted.org/packages/a6/cb/6f5c4ed4da249ef5eea34ddfbb38174c5533ff3da8703b8252bf44b80396/vcs_versioning-2.3.1.tar.gz
+        sha256: 806635bd0ea653c96af98a70624be758d408a989f2cd0b390e63474d99f96b63
+        x-checker-data:
+          type: pypi
+          name: vcs-versioning
+      - type: file
+        url: https://files.pythonhosted.org/packages/34/26/f5d29e25ffdb535afef2d35cdb55b325298f96debd670da4c325e08d70f4/setuptools-83.0.0.tar.gz
+        sha256: 025bccbbf0fa05b6192bc64ae1e7b16e001fd6d6d4d5de03c97b1c1ade523bef
+        x-checker-data:
+          type: pypi
+          name: setuptools
+      - type: file
+        url: https://files.pythonhosted.org/packages/5d/b1/d0b97ffd2856a7d19c63024a89fb84813cb9d2ed7fa8fdbedf9e2f13a9ab/setuptools_scm-10.2.1.tar.gz
+        sha256: 4fa7dd82cf8c800df59c9a288c90299b1657ff1ecfc3f5cc00287c5dbf5e27a9
+        x-checker-data:
+          type: pypi
+          name: setuptools-scm
+      - type: file
+        url: https://files.pythonhosted.org/packages/f9/e2/3e91f31a7d2b083fe6ef3fa267035b518369d9511ffab804f839851d2779/pluggy-1.6.0.tar.gz
+        sha256: 7dcc130b76258d33b90f61b658791dede3486c3e6bfb003ee5c9bfb396dd22f3
+        x-checker-data:
+          type: pypi
+          name: pluggy
+      - type: file
+        url: https://files.pythonhosted.org/packages/b2/f2/fa88c58efb9a737c7e0e40e470edd0973fe33f0f277d24dcf17454b50974/poetry_core-2.4.1.tar.gz
+        sha256: 89dceb6c10e9c6d8650a16183400e3c9ff9ddee13b0a81023b5575334a2b3744
+        x-checker-data:
+          type: pypi
+          name: poetry-core
+      - type: file
+        url: https://files.pythonhosted.org/packages/94/96/e07752635b98536177fa1f37671c8f3cdde2e724c6bcf6034b2cfb571565/tomlkit-0.15.1.tar.gz
+        sha256: e25bbf38843005246210a12982776f27f99cb9be67160e14434d0c0d21ee1e97
+        x-checker-data:
+          type: pypi
+          name: tomlkit
+      - type: file
+        url: https://files.pythonhosted.org/packages/4a/96/0c57e3e228ffc54074867406b659b197678674f1f0bf600d114965289834/calver-2025.10.20.tar.gz
+        sha256: c98b376c2424642224d456b2f70c51402343e008c63d204634665e1a2a2835f5
+        x-checker-data:
+          type: pypi
+          name: calver
+      - type: file
+        url: https://files.pythonhosted.org/packages/c2/e3/7ca82ee24c82d344584abd5b8637b3bd056f2900226e8d82fc22f1184b92/trove_classifiers-2026.6.1.19.tar.gz
+        sha256: c5132b4b61a829d11cfbd2d72e97f20a45ed6edb95e45c5efdeb5e00836b2745
+        x-checker-data:
+          type: pypi
+          name: trove-classifiers
+      - type: file
+        url: https://files.pythonhosted.org/packages/6b/b0/4cc743d38adbee9d57d786fa496ed1daadb17e48589b6da8fa55717a0746/hatch_vcs-0.5.0.tar.gz
+        sha256: 0395fa126940340215090c344a2bf4e2a77bcbe7daab16f41b37b98c95809ff9
+        x-checker-data:
+          type: pypi
+          name: hatch-vcs
+      - type: file
+        url: https://files.pythonhosted.org/packages/69/08/33331757185504aae48b8d9bd78cec03a76e3aecfb52e549d05a2347c0dd/hatchling-1.32.0.tar.gz
+        sha256: 0bdbde4a52b06c37e3eca395f85a762bf0ef06fe374fd8ae429dc6be10230f5f
+        x-checker-data:
+          type: pypi
+          name: hatchling
+      - type: file
+        url: https://files.pythonhosted.org/packages/8d/7c/0f69b0c7150ce4bcee78c199fe3b7e03a6e01578451bd5d5d1a58beb32f9/scikit_build_core-1.0.3.tar.gz
+        sha256: a4d7a05978ee37975c37743510c8991e2debce7ef83afb0a07c0c576fd4f16e8
+        x-checker-data:
+          type: pypi
+          name: scikit-build-core
+      - type: file
+        url: https://files.pythonhosted.org/packages/c9/41/ba46e9906b7f1b7bfb7009e7997d1c32909bd48444945bc436b82b5949af/pcre2-0.7.1.tar.gz
+        sha256: 69ced4288892e2571dd792e7bfb12371bb059f226204bf03300664177c508b64
+        x-checker-data:
+          type: pypi
+          name: pcre2
+      - type: file
+        url: https://files.pythonhosted.org/packages/9c/99/0556919f96b1c291a7ff83793adb328e2a1a5e6cfb379d5acc637cdec959/swig-4.4.1.tar.gz
+        sha256: db9a625653f6454530a6c6553d17cf576d7aa2d253c76dc8cdd5979f0cb15012
+        x-checker-data:
+          type: pypi
+          name: swig
+      - type: file
+        url: https://files.pythonhosted.org/packages/55/1d/deb95fcf723cec1c2619b7c15a340d8e9bd4b13a589f87c428977058f824/gpg-2.0.0.tar.gz
+        sha256: 4eb7ad1477e713e97e623d5d1081f4ba05a522bdbc30024c4ce43ec47c045438
+        x-checker-data:
+          type: pypi
+          name: gpg
 
   - name: python3-distro
     buildsystem: simple
