@@ -31,8 +31,8 @@ modules:
       - /share/swig
     sources:
       - type: archive
-        url: https://sourceforge.net/projects/swig/files/swig/swig-4.4.1/swig-4.4.1.tar.gz
-        sha256: 40162a706c56f7592d08fd52ef5511cb7ac191f3593cf07306a0a554c6281fcf
+        url: https://sourceforge.net/projects/swig/files/swig/swig-4.5.0/swig-4.5.0.tar.gz
+        sha256: 22ae0e887f8cca8031a325c67d005207653200b40e71edb3f88780e28e47d0ff
         x-checker-data:
           type: anitya
           project-id: 4919
@@ -57,14 +57,14 @@ modules:
         requests
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/34/26/f5d29e25ffdb535afef2d35cdb55b325298f96debd670da4c325e08d70f4/setuptools-83.0.0.tar.gz
-        sha256: 025bccbbf0fa05b6192bc64ae1e7b16e001fd6d6d4d5de03c97b1c1ade523bef
+        url: https://files.pythonhosted.org/packages/6d/44/f5da03a8ef95d369145c5bb53050e7877c9f3d312e128605fd9504829143/setuptools-84.0.0.tar.gz
+        sha256: f4695c21257f0d9b537ec2692c941d02ee143b7cc1276941349a546573b2ef73
         x-checker-data:
           type: pypi
           name: setuptools
       - type: file
-        url: https://files.pythonhosted.org/packages/39/62/75f18a0f03b4219c456652c7780e4d749b929eb605c098ce3a5b6b6bc081/wheel-0.47.0.tar.gz
-        sha256: cc72bd1009ba0cf63922e28f94d9d83b920aa2bb28f798a31d0691b02fa3c9b3
+        url: https://files.pythonhosted.org/packages/d0/20/50ed6bdf27dec98b568a8ae25dc599f35baa3d9709f9e83fd1edb56b9a90/wheel-0.48.0.tar.gz
+        sha256: 94800765601e9171bf5d58d066e640662842bcedcbab982b2c90787a2c987322
         x-checker-data:
           type: pypi
           name: wheel
@@ -111,8 +111,8 @@ modules:
             <: '3'
             '>=': '2'
       - type: file
-        url: https://files.pythonhosted.org/packages/19/b6/9df434a8eeba2e6628c465a1dfa31034228ef79b26f76f46278f4ef7e49d/chardet-7.4.3.tar.gz
-        sha256: cc1d4eb92a4ec1c2df3b490836ffa46922e599d34ce0bb75cf41fd2bf6303d56
+        url: https://files.pythonhosted.org/packages/b1/51/cd61c567092a6cec796144510a68aff158ebfc1df82950a45bae65f28413/chardet-7.6.0.tar.gz
+        sha256: 93d9df6089ded42ed1fe9f57e272c0b74bd0464d45c0c7d50f09f26f31105c3c
         x-checker-data:
           type: pypi
           name: chardet
