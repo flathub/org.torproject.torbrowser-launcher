@@ -31,8 +31,8 @@ modules:
       - /share/swig
     sources:
       - type: archive
-        url: https://sourceforge.net/projects/swig/files/swig/swig-4.5.0/swig-4.5.0.tar.gz
-        sha256: 22ae0e887f8cca8031a325c67d005207653200b40e71edb3f88780e28e47d0ff
+        url: https://sourceforge.net/projects/swig/files/swig/swig-4.5.1/swig-4.5.1.tar.gz
+        sha256: 7fec50b27deddab5455a9633780b6341eddfb96215a7619e93a76eb27178f653
         x-checker-data:
           type: anitya
           project-id: 4919
