@@ -197,5 +197,7 @@ modules:
         path: metainfo-add-bug-tracker.patch
       - type: patch
         path: metainfo-screenshot-url.patch
+      - type: patch
+        path: aarch64.patch
     build-commands:
       - python3 setup.py install --prefix=${FLATPAK_DEST} --root=/ --optimize=1
