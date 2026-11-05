@@ -178,8 +178,7 @@ modules:
           type: git
           tag-pattern: ^gpgmepy-([\d.]+)$
       - type: patch
-        paths:
-          - gpgmepy-python-3.13.patch
+        path: patches/gpgmepy-python-3.13.patch
 
   - name: torbrowser-launcher
     buildsystem: simple
@@ -192,12 +191,10 @@ modules:
           project-id: 6359
           url-template: https://gitlab.torproject.org/tpo/applications/torbrowser-launcher/-/archive/v$version/torbrowser-launcher-v$version.tar.gz
       - type: patch
-        path: use-flatpak-sys-prefix.patch
-      - type: patch
-        path: metainfo-add-bug-tracker.patch
-      - type: patch
-        path: metainfo-screenshot-url.patch
-      - type: patch
-        path: aarch64.patch
+        paths:
+          - patches/use-flatpak-sys-prefix.patch
+          - patches/metainfo-add-bug-tracker.patch
+          - patches/metainfo-screenshot-url.patch
+          - patches/aarch64-support.patch
     build-commands:
       - python3 setup.py install --prefix=${FLATPAK_DEST} --root=/ --optimize=1
